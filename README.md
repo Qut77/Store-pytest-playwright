@@ -1,4 +1,4 @@
-````md
+
 # Playwright UI Tests
 
 ![Tests](https://github.com/Qut77/Store-pytest-playwright/actions/workflows/tests.yml/badge.svg)
@@ -107,5 +107,4 @@ pytest tests/ui -v
 * Faker
 * Скриншоты и trace при падениях тестов
 
-```
 ```

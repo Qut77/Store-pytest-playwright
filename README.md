@@ -106,5 +106,3 @@ pytest tests/ui -v
 * Test data management
 * Faker
 * Скриншоты и trace при падениях тестов
-
-```

@@ -3,8 +3,9 @@ from playwright.sync_api import Page
 class BasePage:
     URL = None
 
-    def __init__(self, page: Page):
+    def __init__(self, page: Page, locators=None):
         self.page = page
+        self.locators = locators
 
     def open(self) -> None:
         if not self.URL:

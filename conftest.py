@@ -1,6 +1,7 @@
 import pytest
 from playwright.sync_api import Playwright, Page
 from pages.login_page import LoginPage
+from pages.product_page import ProductPage
 from pages.locators import *
 
 @pytest.fixture(scope="session", autouse=True)
@@ -12,4 +13,11 @@ def login_page(page:Page) -> LoginPage:
     return LoginPage(
         page=page,
         locators=LoginPageLocators
+    )
+
+@pytest.fixture
+def product_page(page:Page) -> ProductPage:
+    return ProductPage(
+        page=page,
+        locators=ProductPageLocators
     )
